@@ -10,15 +10,16 @@
   let b = +prompt("nhập b")
   let c = +prompt("nhập c")
   if (a+b>c && a+c>b && c+b>a){
-    if (a*b == b*c || a*b == a*c || a*c==c*b){
-        document.write("đây là tam giác cân")
-    }
-    else if (a*b==b*c && b*c==c*a){
+    if  (a*b==b*c && b*c==c*a){
         document.write("đây là tam giác đều")
     }
+    else if
+        (a*b == b*c || a*b == a*c || a*c==c*b){
+          document.write("đây là tam giác cân")
+    }
     else if (Math.pow(b*c,2)==Math.pow(a*b,2)+Math.pow(a*c,2)||
-        Math.pow(a*b,2)==Math.pow(c*a,2)+Math.pow(b*c,2) ||
-      Math.pow(a*c,2)==Math.pow(a*b,2)+Math.pow(b*c,2))
+             Math.pow(a*b,2)==Math.pow(c*a,2)+Math.pow(b*c,2) ||
+             Math.pow(a*c,2)==Math.pow(a*b,2)+Math.pow(b*c,2))
     {
         document.write("đây là tam giác vuông");
     }

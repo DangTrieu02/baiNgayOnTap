@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tính tổng từ a đến b</title>
+</head>
+<body>
+<script>
+    let  a = +prompt("nhập số a ");
+    let  b = +prompt("nhập số b ");
+    let tong = 0;
+    if (a>b){
+        for (let i=b; i<a;i++){
+            tong+=i;
+        }
+        document.write("tổng từ a đến b là "+ tong)
+        }else if (a<b){
+        for (let i=a ;i<b ;i++){
+            tong+=i;
+        }
+        document.write("tổng từ a đến b là "+ tong)
+
+    }else {
+        document.write("a = b");
+    }
+</script>
+</body>
+</html>
